@@ -1,5 +1,9 @@
 # MD
 
-For the timebeing, I just wrote a simple molecular dynamics code and wrote GPU kernels in Numba to speed it up.
+For the time being, I just wrote a simple molecular dynamics code for CPU as well as equivalent GPU kernels in Numba to speed it up. Molecular Dynamics is one of the areas that significantly benefit from specialized hardware (not that GPU is specialized hardware.)
 
 First pip install the requirement file and then you should be able to run the notebook.
+
+The outputs are generated in the LAMMPS dump file format. You can open them and view the dynamics with opensource software such as OVITO.
+
+In this particular example I am achieving a 10X speedup!
